@@ -1,0 +1,15 @@
+/.git/
+/.vscode/
+/node_modules/
+/archives/
+/archive/
+/reference/
+/psd/
+/dist/
+/app/css/
+/**/*.psd
+/**/*.rar
+/**/*.xd
+/**/Thumbs.db
+/**/ht.access
+/**/.htaccess
