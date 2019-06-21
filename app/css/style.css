@@ -1,3 +1,5 @@
+/*--- GLOBAL FONTS STYLES ---*/
+
 /* open-sans-regular - latin */
 @font-face {
 	font-family: 'Open Sans';
@@ -82,6 +84,112 @@
 	/* Legacy iOS */
 }
 
+/*--- GLOBAL TAG STYLES ---*/
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+
+html, body {
+	/* height: 100%; */
+	/* margin: 0; */
+	/* padding: 0; */
+}
+
 body {
+	position: relative;
+	/* min-width: 320px; /* поменять на нужное значение */
+
 	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 26px; /* межстрочный интервал свой для каждого проекта */
+	color: #7581a1;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*--- GLOBAL CLASS STYLES ---*/
+.h1, .h2, .h3 {
+	color: #192b59;
+}
+.h2 {
+	font-size: 50px;
+	font-weight: 600;
+}
+.h2 span {
+	display: block;
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: #1085e4;
+}
+
+/*--- CUSTOM STYLES ---*/
+
+/* HEADER */
+.main-nav__list {
+	font-size: 12px;
+	font-weight: bold;
+	color: #6e7ea9;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+}
+.main-nav__trial {
+	font-weight: normal;
+	color: #ffffff;
+	background-color: #1085e4;
+}
+
+.page-header__title {
+	font-size: 80px;
+	font-weight: 600;
+}
+
+/* FEATURES */
+
+.features__title {
+	font-size: 40px;
+	font-weight: 700;
+}
+.features__title span {
+	font-size: 14px;
+}
+.features__item {
+	text-align: center;
+}
+.features__name {
+	font-size: 20px;
+	font-weight: 600;
+}
+.features__more {
+	font-size: 14px;
+	font-weight: 600;
+	color: #1085e4;
+}
+.features__quote-author {
+	font-style: normal;
+	font-weight: bold;
+	color: #192b59;
+}
+.features__quote-author span {
+	font-size: 14px;
+	font-weight: 600;
+	color: #1085e4;
 }
