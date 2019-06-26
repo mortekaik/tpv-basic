@@ -105,7 +105,7 @@ body {
 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	line-height: 26px; /* межстрочный интервал свой для каждого проекта */
+	line-height: 1.2; /* межстрочный интервал свой для каждого проекта */
 	color: #7581a1;
 }
 
@@ -125,6 +125,22 @@ img {
 }
 
 /*--- GLOBAL CLASS STYLES ---*/
+
+/* спец.класс для скрытия элементов с сохранением доступности */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
 .h1, .h2, .h3 {
 	color: #192b59;
 }
