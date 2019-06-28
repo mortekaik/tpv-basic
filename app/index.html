@@ -168,6 +168,8 @@
 	<section class="intro-app">
 		<div class="container intro-app__wrapper">
 
+			<span class="intro-app__back-title">Intro</span>
+
 			<div class="intro-app__ column column">
 				<h2 class="h2 intro-app__title">
 					Meet With Future Landingpage
@@ -178,8 +180,8 @@
 				</p>
 				<p class="intro-app__available-text">Available Now</p>
 				<ul class="intro-app__available-list available">
-					<li class="available__button"><a href="#!" target="_blank"></a></li>
-					<li class="available__button"><a href="#!" target="_blank"></a></li>
+					<li class="available__button"><a href="#!" target="_blank">Google Play</a></li>
+					<li class="available__button"><a href="#!" target="_blank">AppStore</a></li>
 				</ul>
 			</div>
 			<!-- // End column -->
@@ -304,7 +306,7 @@
 				
 				<div class="pricing__item plan-card slider__item">
 					<div class="plan-card__cost">Free</div>
-					<h3 class="plan-card__title">Starter</h3>
+					<h3 class="h3 plan-card__title">Starter</h3>
 					<ul class="plan-card__list">
 						<li class="plan-card__item">Unlimited Users Active</li>
 						<li class="plan-card__item">1 GB Bandwidth Speed</li>
@@ -318,11 +320,9 @@
 
 				<div class="pricing__item plan-card slider__item">
 					<div class="plan-card__cost">
-						<span class="plan-card__currency">$</span>
-						90
-						<span class="plan-card__period">/mo</span>
+						<span class="plan-card__currency">$</span>90<span class="plan-card__period">/mo</span>
 					</div>
-					<h3 class="plan-card__title">Starter</h3>
+					<h3 class="h3 plan-card__title">Starter</h3>
 					<ul class="plan-card__list">
 						<li class="plan-card__item">Unlimited Users Active</li>
 						<li class="plan-card__item">1 GB Bandwidth Speed</li>
@@ -336,11 +336,9 @@
 
 				<div class="pricing__item plan-card slider__item">
 					<div class="plan-card__cost">
-						<span class="plan-card__currency">$</span>
-						350
-						<span class="plan-card__period">/mo</span>
+						<span class="plan-card__currency">$</span>350<span class="plan-card__period">/mo</span>
 					</div>
-					<h3 class="plan-card__title">Starter</h3>
+					<h3 class="h3 plan-card__title">Starter</h3>
 					<ul class="plan-card__list">
 						<li class="plan-card__item">Unlimited Users Active</li>
 						<li class="plan-card__item">1 GB Bandwidth Speed</li>
@@ -376,7 +374,7 @@
 					<div class="person__socials socials">
 						<ul class="socials__list">
 							<li class="socials__item">
-								<a class="socials__link socials__link--add" href="#">+</a>
+								<a class="socials__link socials__link--add" href="#!">+</a>
 							</li>
 						</ul>
 					</div>
@@ -389,16 +387,16 @@
 					<div class="person__socials socials">
 						<ul class="socials__list">
 							<li class="socials__item">
-								<a class="socials__link socials__link--facebook" href="#">Facebook</a>
+								<a class="socials__link socials__link--facebook" href="#!">Facebook</a>
 							</li>
 							<li class="socials__item">
-								<a class="socials__link socials__link--twitter" href="#">Twitter</a>
+								<a class="socials__link socials__link--twitter" href="#!">Twitter</a>
 							</li>
 							<li class="socials__item">
-								<a class="socials__link socials__link-behance" href="#">Behance</a>
+								<a class="socials__link socials__link--behance" href="#!">Behance</a>
 							</li>
 							<li class="socials__item">
-								<a class="socials__link socials__link--chrome" href="#">Chrome</a>
+								<a class="socials__link socials__link--chrome" href="#!">Chrome</a>
 							</li>
 						</ul>
 					</div>
@@ -411,7 +409,7 @@
 					<div class="person__socials socials">
 						<ul class="socials__list">
 							<li class="socials__item">
-								<a class="socials__link socials__link--add" href="#">+</a>
+								<a class="socials__link socials__link--add" href="#!">+</a>
 							</li>
 						</ul>
 					</div>
@@ -430,20 +428,20 @@
 			<img class="contact__image" src="img/features/" alt="plot picture">
 			
 			<div class="contact__column column">
-				<h2 class="h2 contact__title">Start Your Free Trail<br>No Need Credit Card.</h2>
+				<h2 class="h2 contact__title">Start Your Free Trial<br>No Need Credit Card.</h2>
 
 				<form class="contact__form" action="#" method="POST">
 					<p class="contact-item">
 						<label class="visually-hidden" for="contact-name">Your name</label>
-						<input id="contact-name" type="text" name="name" value="" placeholder="Enter your name here">
+						<input class="contact__name" id="contact-name" type="text" name="name" value="" placeholder="Enter your name here">
 					</p>
 					<p class="contact-item">
 						<label class="visually-hidden" for="contact-email">Your email</label>
-						<input id="contact-email" type="text" name="email" value="" placeholder="Enter your email here">
+						<input class="contact__email" id="contact-email" type="text" name="email" value="" placeholder="Enter your email here">
 					</p>
 					<p class="contact-item">
 						<label class="visually-hidden" for="contact-time">Your message</label>
-						<textarea id="contact-time" type="text" name="message" value="" placeholder="Enter your message here"></textarea>
+						<textarea class="contact__message" id="contact-time" rows="5" cols="50" name="message" placeholder="Enter your message here"></textarea>
 					</p>
 					<button class="button contact__button" type="submit">Submit Now</button>
 				</form>				
@@ -462,7 +460,7 @@
 		<div class="container">
 			<div class="page-footer__copyright copyright">
 				<b class="copyright__text">Made With Love & Copyright By - </b>
-				<a class="button copyright__link" href="#!">Limpon</a>
+				<a class="copyright__link" href="#!">Limpon</a>
 			</div>
 
 			<div class="page-footer__socials socials">
@@ -474,7 +472,7 @@
 						<a class="socials__link socials__link--twitter" href="#">Twitter</a>
 					</li>
 					<li class="socials__item">
-						<a class="socials__link socials__link-behance" href="#">Behance</a>
+						<a class="socials__link socials__link--behance" href="#">Behance</a>
 					</li>
 					<li class="socials__item">
 						<a class="socials__link socials__link--pinterest" href="#">Pinterest</a>
