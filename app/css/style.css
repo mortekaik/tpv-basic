@@ -117,6 +117,7 @@ a {
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto;
 }
@@ -151,7 +152,7 @@ input[type='radio'].visually-hidden {
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
-	padding: 15px 20px;
+	padding: 0 15px;
 }
 .h1, .h2 {
 	color: #192b59;
@@ -160,20 +161,21 @@ input[type='radio'].visually-hidden {
 	font-size: 50px;
 	font-weight: 600;
 	line-height: 60px;
+	letter-spacing: -1.5px;
 }
 .h2 span {
 	display: block;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 22px;
-	letter-spacing: 2px;
+	letter-spacing: 3.6px;
 	text-transform: uppercase;
 	color: #1085e4;
 }
 .h3 {
 	font-size: 14px;
 	font-weight: 800;
-	letter-spacing: 2px;
+	letter-spacing: 2.8px;
 	text-transform: uppercase;
 	color: #1a88e1;
 }
@@ -254,6 +256,7 @@ input[type='radio'].visually-hidden {
 }
 .features__title span {
 	font-size: 14px;
+	letter-spacing: 2.8px;
 }
 .features__item {
 	text-align: center;
@@ -261,11 +264,14 @@ input[type='radio'].visually-hidden {
 .features__name {
 	font-size: 20px;
 	font-weight: 600;
+	text-transform: none;
+	letter-spacing: -0.6px;
 	color: #192b59;
 }
 .features__more {
 	font-size: 14px;
 	font-weight: 600;
+	line-height: 26px;
 	color: #1085e4;
 }
 .features__quote-author {
@@ -286,6 +292,7 @@ input[type='radio'].visually-hidden {
 .subscribe__title span {
 	font-size: 14px;
 	line-height: 20px;
+	letter-spacing: 2.8px;
 	color: #00bffe;
 }
 .subscribe__desc {
@@ -316,6 +323,11 @@ input[type='radio'].visually-hidden {
 }
 
 /* STATS */
+.stats {
+	background-color: #edf6ff;
+	padding-top: 96px;
+	padding-bottom: 113px;
+}
 .stats__wrapper {
 	text-align: center;
 }
@@ -323,10 +335,12 @@ input[type='radio'].visually-hidden {
 	max-width: 500px;
 	margin: 0 auto;
 	margin-bottom: 55px;
+	line-height: 54px;
 }
 .stats__title span {
 	font-size: 16px;
-	line-height: 3;
+	letter-spacing: 3.2px;
+	line-height: 60px;
 }
 .stats__list {
 	display: flex;
@@ -339,15 +353,19 @@ input[type='radio'].visually-hidden {
 .stats__item {
 	font-size: 12px;
 	font-weight: bold;
+	line-height: 30px;
 	color: #1085e4;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 1.4px;
+	letter-spacing: 2.4px;
 }
 .stats__item span {
 	display: block;
+	/* margin-bottom: 6px; */
 	font-size: 60px;
 	font-weight: bold;
+	line-height: 70px;
+	letter-spacing: -1.8px;
 	color: #bacbdc;
 }
 
@@ -377,9 +395,23 @@ input[type='radio'].visually-hidden {
 /* LEARN-MORE	*/
 
 /* PREVIEW */
+.preview {
+	background-color: #edf6ff;
+	padding-top: 96px;
+}
 .preview__title {
+	margin: 0;
+	margin-bottom: 73px;
 	font-size: 40px;
-	line-height: 50px;
+	line-height: 46px;
+	letter-spacing: -1.2px;
+	text-align: center;
+}
+.preview__title span {
+	line-height: 60px;
+}
+.preview__image {
+	margin: 0 auto;
 }
 
 /* REVIEWS */
