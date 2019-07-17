@@ -150,9 +150,10 @@ input[type='radio'].visually-hidden {
 	overflow: hidden;
 }
 .container {
-	max-width: 1110px;
+	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 15px;
+	outline: 1px solid red;
 }
 .h1, .h2 {
 	color: #192b59;
@@ -446,16 +447,36 @@ input[type='radio'].visually-hidden {
 
 /* PRICING */
 .pricing__title {
+	margin: 0;
+	margin-bottom: 83px;
 	font-size: 40px;
-	line-height: 50px;
+	line-height: 46px;
+	letter-spacing: -1.2px;
+	text-align: center;
+}
+.pricing__title span {
+	line-height: 60px;
+}
+.pricing__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .pricing__item {
-	margin-bottom: 15px;
+	max-width: 350px;
+	flex-grow: 1;
+}
+.plan-card {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	text-align: center;
+	background-color: #f5faff;
 }
 .plan-card__cost {
 	font-size: 70px;
 	font-weight: bold;
 	color: #000958;
+	letter-spacing: -2px;
 }
 .plan-card__currency {
 	font-size: 20px;
@@ -465,15 +486,28 @@ input[type='radio'].visually-hidden {
 	color: #7b8ab2;
 }
 .plan-card__title {
+	margin-top: 12px;
+	margin-bottom: 43px;
 	color: #0084ff;
 }
 .plan-card__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	font-size: 14px;
 	line-height: 20px;
 	color: #8085b1;
 	margin-bottom: 15px;
 }
+.plan-card__item {
+	margin-bottom: 20px;
+}
+.plan-card__item:last-child {
+	margin-bottom: 0;
+}
 .plan-card__button {
+	margin-top: 33px;
+	padding: 21px 62px;
 	color: #8085b1;
 	background-color: transparent;
 	border: 2px solid #dce1e5;
@@ -483,6 +517,12 @@ input[type='radio'].visually-hidden {
 	background-color: #1085e4;
 	border: 2px solid #1085e4;
 }
+.plan-card--highlighted {
+	background-color: #192b59;
+}
+.plan-card--highlighted ul {
+	color: #ffffff;
+}
 .plan-card--highlighted .plan-card__button {
 	color: #ffffff;
 	background-color: #1085e4;
@@ -491,6 +531,7 @@ input[type='radio'].visually-hidden {
 .plan-card--highlighted .plan-card__button:hover {
 	color: #1085e4;
 	background-color: #ffffff;
+	border-color: #000958;
 }
 
 /* TEAM */
