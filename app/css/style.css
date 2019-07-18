@@ -467,10 +467,17 @@ input[type='radio'].visually-hidden {
 	flex-grow: 1;
 }
 .plan-card {
+	position: relative;
 	padding-top: 60px;
 	padding-bottom: 80px;
 	text-align: center;
 	background-color: #f5faff;
+}
+.plan-card::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 .plan-card__cost {
 	font-size: 70px;
@@ -480,6 +487,7 @@ input[type='radio'].visually-hidden {
 }
 .plan-card__currency {
 	font-size: 20px;
+	padding-right: 2px;
 }
 .plan-card__period {
 	font-size: 20px;
@@ -514,11 +522,14 @@ input[type='radio'].visually-hidden {
 }
 .plan-card__button:hover {
 	color: #ffffff;
-	background-color: #1085e4;
-	border: 2px solid #1085e4;
+	background-color: #94b4cc;
+	border: 2px solid #94b4cc;
 }
 .plan-card--highlighted {
 	background-color: #192b59;
+}
+.plan-card--highlighted .plan-card__cost {
+	color: #ffffff;
 }
 .plan-card--highlighted ul {
 	color: #ffffff;
