@@ -195,12 +195,30 @@ input[type='radio'].visually-hidden {
 }
 .button:hover {
 	color: #1085e4;
-	background-color: #ffffff;
+	background-color: transparent;
 }
 
 /*--- CUSTOM STYLES ---*/
 
 /* HEADER */
+.page-header {
+	background-image: url('../img/header_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.page-header__container {
+	padding-top: 48px;
+	padding-bottom: 311px;
+}
+.page-header__top-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.page-header__logo img {
+	width: 181px;
+	height: 49px;
+}
 .main-nav__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -213,8 +231,14 @@ input[type='radio'].visually-hidden {
 	text-transform: uppercase;
 	list-style-type: none;
 }
+.main-nav__item {
+	padding-top: 3px;
+}
+.main-nav__item:last-child {
+	padding-top: 2px;
+}
 .main-nav__link {
-	padding: 0 21px;
+	padding: 0 19px;
 	color: #6e7ea9;
 }
 .main-nav__trial {
@@ -233,9 +257,9 @@ input[type='radio'].visually-hidden {
 	font-weight: 600;
 	line-height: 90px;
 	letter-spacing: -2.3px;
-	margin: 0;
-	padding: 0;
+	margin-top: 299px;
 	margin-bottom: 48px;
+	padding: 0;
 }
 .page-header__links .button + .button {
 	margin-left: 15px;
@@ -247,6 +271,17 @@ input[type='radio'].visually-hidden {
 }
 .page-header__learn-link:hover {
 	color: #7e8bae;
+}
+
+/* SPONSORS */
+.sponsors {
+	background-image: url('../img/sponsors/sponsors_bg_all.png');
+	background-repeat: no-repeat;
+}
+.sponsors__list {
+	margin: 0;
+	padding: 0;
+	/* list-style-type: none; */
 }
 
 /* FEATURES */
@@ -463,21 +498,19 @@ input[type='radio'].visually-hidden {
 	justify-content: space-between;
 }
 .pricing__item {
-	max-width: 350px;
-	flex-grow: 1;
+	flex-basis: 31.5%;
+	/* max-width: 350px; */
+	/* flex-grow: 1; */
 }
 .plan-card {
 	position: relative;
 	padding-top: 60px;
 	padding-bottom: 80px;
 	text-align: center;
+	background-image: url('../img/pricing/triangle.svg');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
 	background-color: #f5faff;
-}
-.plan-card::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
 }
 .plan-card__cost {
 	font-size: 70px;
@@ -526,6 +559,7 @@ input[type='radio'].visually-hidden {
 	border: 2px solid #94b4cc;
 }
 .plan-card--highlighted {
+	background-image: none;
 	background-color: #192b59;
 }
 .plan-card--highlighted .plan-card__cost {
@@ -540,9 +574,9 @@ input[type='radio'].visually-hidden {
 	border: 2px solid #1085e4;
 }
 .plan-card--highlighted .plan-card__button:hover {
-	color: #1085e4;
-	background-color: #ffffff;
-	border-color: #000958;
+	color: #94b4cc;
+	background-color: transparent;
+	border-color: #94b4cc;
 }
 
 /* TEAM */
