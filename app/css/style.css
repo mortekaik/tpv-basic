@@ -551,10 +551,12 @@ input[type='radio'].visually-hidden {
 	position: absolute;
 	width: 933px;
 	height: 988px;
-	left: -38px;
+	left: 0;
 	bottom: -32px;
 	background-image: url('../img/features/features_note-all.png');
 	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
 }
 .software-features__wrappper {
 	position: relative;
@@ -672,24 +674,65 @@ input[type='radio'].visually-hidden {
 }
 
 /* INTRO-APP */
+.intro-app {
+	padding: 111px 0 48px 0;
+}
 .intro-app__wrapper {
 	position: relative;
 }
 .intro-app__back-title {
 	position: absolute;
-	left: 50px;
-	top: 20px;
+	left: 182px;
+	top: -141px;
 	font-size: 300px;
 	font-weight: 800;
+	letter-spacing: -9px;
 	color: #000000;
 	opacity: 0.04;
 	z-index: -1;
 }
+.intro-app__content {
+	width: 55%;
+}
+.intro-app__title {
+	margin: 0;
+	margin-bottom: 36px;
+}
+.intro-app__desc {
+	margin-bottom: 28px;
+}
 .intro-app__available-text {
+	margin-bottom: 23px;
 	font-weight: bold;
 	color: #c4d2dd;
 	text-transform: uppercase;
-	letter-spacing: 1.4px;
+	letter-spacing: 3.2px;
+}
+.intro-app__download-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 0;
+}
+.intro-app__download-list > li {
+	display: inline-block;
+	margin-right: 30px;
+}
+.app-btns__link {
+	display: block;
+	width: 161px;
+	height: 53px;
+	background-image: url('../img/video/apps_links-without-shadow.png');
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px rgba(144, 144, 144, 0.4);
+}
+.app-btns__link--android {
+	background-position: 0 0;
+}
+.app-btns__link--ios {
+	width: 152px;
+	background-position: -191px 0;
 }
 
 /* GET-STARTED */
