@@ -199,6 +199,12 @@ input[type='radio'].visually-hidden {
 	color: #1085e4;
 	background-color: transparent;
 }
+.icon-gear {
+	width: 115px;
+	height: 97px;
+	background-image: url('../img/features/features_icon-gear.png');
+	background-repeat: no-repeat;
+}
 
 /*--- CUSTOM STYLES ---*/
 
@@ -567,11 +573,7 @@ input[type='radio'].visually-hidden {
 	position: absolute;
 	top: 0;
 	left: -24px;
-	width: 115px;
-	height: 97px;
 	margin-bottom: 8px;
-	background-image: url('../img/features/features_icon-plus.png');
-	background-repeat: no-repeat;
 }
 .software-features__title {
 	margin: 0;
@@ -675,7 +677,7 @@ input[type='radio'].visually-hidden {
 
 /* INTRO-APP */
 .intro-app {
-	padding: 111px 0 48px 0;
+	padding: 111px 0 91px 0;
 }
 .intro-app__wrapper {
 	position: relative;
@@ -693,6 +695,7 @@ input[type='radio'].visually-hidden {
 }
 .intro-app__content {
 	width: 55%;
+	padding-bottom: 30px;
 }
 .intro-app__title {
 	margin: 0;
@@ -724,7 +727,7 @@ input[type='radio'].visually-hidden {
 	height: 53px;
 	background-image: url('../img/video/apps_links-without-shadow.png');
 	background-repeat: no-repeat;
-	border-radius: 10px;
+	border-radius: 5px;
 	box-shadow: 0 8px 16px rgba(144, 144, 144, 0.4);
 }
 .app-btns__link--android {
@@ -734,8 +737,48 @@ input[type='radio'].visually-hidden {
 	width: 152px;
 	background-position: -191px 0;
 }
+.intro-app__link {
+	display: block;
+	position: absolute;
+	top: -59px;
+	right: 0px;
+}
 
 /* GET-STARTED */
+.get-started {
+	/* padding: 179px 0 120px 0; */
+	background-image: url('../img/features/get-started_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.get-started__wrapper {
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+	align-items: center;
+}
+.get-started__image {
+	margin-left: -10px;
+}
+.get-started__column {
+	position: relative;
+	flex-basis: 54%;
+}
+.get-started__icon {
+	position: absolute;
+	top: 0;
+	left: -24px;
+	margin-bottom: 8px;
+}
+.get-started__title {
+	margin: 0;
+}
+.get-started__desc {
+	margin: 0;
+	padding: 0;
+	/* margin-bottom: 29px; */
+}
+
 
 /* LEARN-MORE	*/
 
