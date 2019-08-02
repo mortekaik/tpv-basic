@@ -840,20 +840,24 @@ input[type='radio'].visually-hidden {
 /* REVIEWS */
 .reviews {
 	position: relative;
-	/* padding: 120px 0 120px 0; */
+	padding-top: 120px;
 	background-image: url('../img/clients/clients_bg.svg');
 	background-repeat: no-repeat;
-	background-size: auto;
-	/* background-position: bottom left; */
+	background-position: left 120px;
+}
+.reviews__wrapper {
+	padding-top: 43px;
 }
 .reviews__title {
-	margin: 0;
+	margin-bottom: 61px;
 	font-size: 40px;
 	line-height: 50px;
+	letter-spacing: -1.3px;
 	color: #eeeeee;
 }
 .reviews__title span {
 	color: #85c8ff;
+	margin-bottom: 17px;
 }
 .reviews__list {
 	display: flex;
@@ -863,34 +867,47 @@ input[type='radio'].visually-hidden {
 .reviews__item {
 	margin: 0;
 	flex-basis: 31.5%;
-	padding: 40px 40px 0 40px;
+	padding: 34px 40px 20px 40px;
 	border-radius: 10px;
 	background-color: #ffffff;
 	box-shadow: 0 16px 32px rgba(185, 185, 185, 0.2);
 }
 .reviews__text {
 	margin: 0;
+	margin-bottom: 27px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #8085b1;
 }
+.reviews__author-info {
+	display: flex;
+	flex-wrap: wrap;
+}
+.reviews__author-picture {
+	margin: 0;
+}
 .reviews__author-name {
+	padding-left: 19px;
 	font-size: 22px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 26px;
+	letter-spacing: -0.66px;
 	color: #000958;
 }
 .reviews__author-name span {
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
-	letter-spacing: 2px;
+	letter-spacing: 2.8px;
 	color: #1085e4;
 	text-transform: uppercase;
 }
 
 /* PRICING */
+.pricing {
+	padding: 96px 0 120px 0;
+}
 .pricing__title {
 	margin: 0;
 	margin-bottom: 83px;
@@ -909,8 +926,6 @@ input[type='radio'].visually-hidden {
 }
 .pricing__item {
 	flex-basis: 31.5%;
-	/* max-width: 350px; */
-	/* flex-grow: 1; */
 }
 .plan-card {
 	position: relative;
@@ -990,13 +1005,38 @@ input[type='radio'].visually-hidden {
 }
 
 /* TEAM */
+.team {
+	padding: 96px 0 120px 0;
+	background-image: url('../img/team/team_bg.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
 .team__title {
+	margin-top: 0;
+	margin-bottom: 50px;
 	font-size: 40px;
 	line-height: 50px;
+	letter-spacing: -1.2px;
 	color: #eeeeee;
+	text-align: center;
 }
 .team__title span {
+	line-height: 60px;
 	color: #85c8ff;
+}
+.team__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.team__item {
+	flex-basis: 31.5%;
+	margin-top: 86px;
+	text-align: center;
+	background-color: #ffffff;
 }
 .person__name {
 	font-size: 26px;
