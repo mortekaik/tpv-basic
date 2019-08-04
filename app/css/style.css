@@ -853,7 +853,7 @@ input[type='radio'].visually-hidden {
 	font-size: 40px;
 	line-height: 50px;
 	letter-spacing: -1.3px;
-	color: #eeeeee;
+	color: #ffffff;
 }
 .reviews__title span {
 	color: #85c8ff;
@@ -1017,7 +1017,7 @@ input[type='radio'].visually-hidden {
 	font-size: 40px;
 	line-height: 50px;
 	letter-spacing: -1.2px;
-	color: #eeeeee;
+	color: #ffffff;
 	text-align: center;
 }
 .team__title span {
@@ -1032,17 +1032,48 @@ input[type='radio'].visually-hidden {
 	padding: 0;
 	list-style-type: none;
 }
-.team__item {
-	flex-basis: 31.5%;
-	margin-top: 86px;
+.person {
 	text-align: center;
 	background-color: #ffffff;
 }
+.team__item {
+	/* flex-basis: 31.5%; */
+	/* margin-top: 86px; */
+	/* box-shadow: 0 8px 30px rgba(156, 156, 156, 0.1); */
+}
+.person__photo {
+	margin-bottom: 23px;
+}
+.team__item img {
+	/* display: inline-block; */
+	/* margin-top: -86px; */
+}
+.person__position {
+	margin: 0;
+	margin-bottom: 13px;
+}
 .person__name {
+	margin: 0;
+	margin-bottom: 26px;
 	font-size: 26px;
 	font-weight: 600;
 	line-height: 1;
+	letter-spacing: -0.78px;
 	color: #192b59;
+}
+.socials__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style-type: none;
+}
+.socials__item {
+	width: 50px;
+	height: 50px;
+	background-image: url('../img/socials/plus.svg');
+	background-repeat: no-repeat;
 }
 
 /* CONTACT */
