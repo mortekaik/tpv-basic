@@ -1052,6 +1052,9 @@ input[type='radio'].visually-hidden {
 }
 .team__item .person__photo {
 	position: absolute;
+	display: block;
+	width: 288px;
+	height: 270px;
 	top: -85px;
 	left: 0;
 	right: 0;
@@ -1068,6 +1071,7 @@ input[type='radio'].visually-hidden {
 }
 .person__socials {
 	font-size: 0;
+	padding: 0 60px;
 }
 .socials__button {
 	display: block;
@@ -1075,23 +1079,69 @@ input[type='radio'].visually-hidden {
 	height: 50px;
 	padding: 0;
 	margin: 0 auto;
-	border-radius: 50%;
+	border-radius: 100%;
 	background-color: #f3f3f3;
-	transition: 0.3s;
+	transition: all 0.3s;
 }
-.socials__button--plus {
+.socials__button span {
+	display: block;
+	margin: 0 auto;
+	width: 20px;
+	height: 20px;
 	background-image: url('../img/team/team_icons.png');
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 2px 2px;
+	/* outline: 1px solid blue; */
+}
+.socials__button:hover {
+	background-color: #1a88e1;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.socials__button--plus span {
+	background-position: 3px 2px;
+}
+.socials__button--plus:hover span {
+	background-position: 3px -25px;
 }
 .socials__list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
-
+.socials__link {
+	line-height: 50px;
+}
+.socials__link span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.socials__link--facebook span {
+	background-position: -28px 2px;
+}
+.socials__link--facebook:hover span {
+	background-position: -28px -25px;
+}
+.socials__link--twitter span {
+	background-position: -58px 2px;
+}
+.socials__link--twitter:hover span {
+	background-position: -58px -25px;
+}
+.socials__link--behance span {
+	background-position: -91px 3px;
+}
+.socials__link--behance:hover span {
+	background-position: -91px -24px;
+}
+.socials__link--chrome span {
+	background-position: -123px 3px;
+}
+.socials__link--chrome:hover span {
+	background-position: -123px -24px;
+}
 
 /* CONTACT */
 .contact__name::placeholder,
