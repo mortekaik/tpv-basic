@@ -1071,7 +1071,7 @@ input[type='radio'].visually-hidden {
 }
 .person__socials {
 	font-size: 0;
-	padding: 0 60px;
+	padding: 0 60px 40px 60px;
 }
 .socials__button {
 	display: block;
@@ -1103,6 +1103,9 @@ input[type='radio'].visually-hidden {
 .socials__button--plus:hover span {
 	background-position: 3px -25px;
 }
+.socials__button--hidden {
+	display: none;
+}
 .socials__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -1110,6 +1113,12 @@ input[type='radio'].visually-hidden {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+.socials__list--showed {
+	display: flex;
+}
+.socials__list--hidden {
+	display: none;
 }
 .socials__link {
 	line-height: 50px;
