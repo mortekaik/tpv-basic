@@ -631,9 +631,25 @@ input[type='radio'].visually-hidden {
 
 /* STATS */
 .stats {
+	position: relative;
 	background-color: #edf6ff;
 	padding-top: 96px;
 	padding-bottom: 108px;
+}
+.stats::before,
+.stats::after {
+	display: block;
+	content: '';
+	position: absolute;
+}
+.stats::before {
+	width: 445px;
+	height: 663px;
+	left: -200px;
+	bottom: -330px;
+	background-image: url('../img/circle_bg.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 .stats__wrapper {
 	text-align: center;
@@ -1091,35 +1107,35 @@ input[type='radio'].visually-hidden {
 	background-image: url('../img/team/team_icons.png');
 	background-repeat: no-repeat;
 	background-position: 2px 2px;
-	/* outline: 1px solid blue; */
 }
-.socials__button:hover {
+.socials__button:hover,
+.socials__button:focus,
+.socials__button:active {
 	background-color: #1a88e1;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .socials__button--plus span {
 	background-position: 3px 2px;
 }
-.socials__button--plus:hover span {
+.socials__button--plus:hover span,
+.socials__button--plus:focus span,
+.socials__button--plus:active span {
 	background-position: 3px -25px;
 }
-.socials__button--hidden {
+/* .socials__button--hidden {
 	display: none;
-}
+} */
 .socials__list {
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
-.socials__list--showed {
-	display: flex;
-}
-.socials__list--hidden {
+/* .socials__list--hidden {
 	display: none;
-}
+} */
 .socials__link {
 	line-height: 50px;
 }
@@ -1130,25 +1146,33 @@ input[type='radio'].visually-hidden {
 .socials__link--facebook span {
 	background-position: -28px 2px;
 }
-.socials__link--facebook:hover span {
+.socials__link--facebook:hover span,
+.socials__link--facebook:focus span,
+.socials__link--facebook:active span {
 	background-position: -28px -25px;
 }
 .socials__link--twitter span {
 	background-position: -58px 2px;
 }
-.socials__link--twitter:hover span {
+.socials__link--twitter:hover span,
+.socials__link--twitter:focus span,
+.socials__link--twitter:active span {
 	background-position: -58px -25px;
 }
 .socials__link--behance span {
 	background-position: -91px 3px;
 }
-.socials__link--behance:hover span {
+.socials__link--behance:hover span,
+.socials__link--behance:focus span,
+.socials__link--behance:active span {
 	background-position: -91px -24px;
 }
 .socials__link--chrome span {
 	background-position: -123px 3px;
 }
-.socials__link--chrome:hover span {
+.socials__link--chrome:hover span,
+.socials__link--chrome:focus span,
+.socials__link--chrome:active span {
 	background-position: -123px -24px;
 }
 
