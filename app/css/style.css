@@ -643,13 +643,22 @@ input[type='radio'].visually-hidden {
 	position: absolute;
 }
 .stats::before {
-	width: 445px;
+	width: 663px;
 	height: 663px;
-	left: -200px;
-	bottom: -330px;
-	background-image: url('../img/circle_bg.svg');
+	left: -226px;
+	bottom: -264px;
+	background-image: url('../img/circle_bg.png');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+}
+.stats::after {
+	width: 672px;
+	height: 673px;
+	right: -82px;
+	top: -215px;
+	background-image: url('../img/rhombus_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .stats__wrapper {
 	text-align: center;
