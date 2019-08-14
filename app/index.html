@@ -496,21 +496,23 @@
 	<section class="contact">
 		<div class="container contact__wrapper">
 
-			<img class="contact__image" src="img/contact-form/contact_screenshot-03.png" alt="plot picture">
+			<div class="contact__image">
+				<img src="img/contact-form/contact_screenshot-03.png" width="460" height="403" alt="plot picture">
+			</div>
 			
 			<div class="contact__column column">
 				<h2 class="h2 contact__title">Start Your Free Trial<br>No Need Credit Card.</h2>
 
 				<form class="contact__form" action="#" method="POST">
-					<p class="contact__item">
+					<p class="contact__item contact__item-name">
 						<label class="visually-hidden" for="contact-name">Your name</label>
 						<input class="contact__name" id="contact-name" type="text" name="name" value="" placeholder="Enter your name here">
 					</p>
-					<p class="contact__item">
+					<p class="contact__item contact__item-email">
 						<label class="visually-hidden" for="contact-email">Your email</label>
 						<input class="contact__email" id="contact-email" type="text" name="email" value="" placeholder="Enter your email here">
 					</p>
-					<p class="contact__item">
+					<p class="contact__item contact__item-message">
 						<label class="visually-hidden" for="contact-message">Your message</label>
 						<textarea class="contact__message" id="contact-message" rows="5" cols="50" name="message" placeholder="Enter your message here"></textarea>
 					</p>
