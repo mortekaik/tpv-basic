@@ -1203,7 +1203,6 @@ input[type='radio'].visually-hidden {
 	display: flex;
 }
 .contact__image {
-	/* flex-basis: 44%; */
 	flex-basis: 460px;
 	align-self: center;
 	margin-right: 30px;
@@ -1213,7 +1212,6 @@ input[type='radio'].visually-hidden {
 	margin-left: -23px;
 }
 .contact__column {
-	/* flex-basis: 56%; */
 	flex-basis: 524px;
 	padding-left: 8px;
 }
@@ -1286,6 +1284,10 @@ input[type='radio'].visually-hidden {
 	height: 13px;
 	background-image: url('../img/contact-form/icon_paper-plane.svg');
 	background-repeat: no-repeat;
+	transition: all 0.3s ease;
+}
+.contact__button:hover::before {
+	background-image: url('../img/contact-form/icon_paper-plane-blue.svg');
 }
 
 /* FOOTER */
