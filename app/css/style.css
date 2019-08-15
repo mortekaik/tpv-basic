@@ -1138,8 +1138,10 @@ input[type='radio'].visually-hidden {
 /* .socials__button--hidden {
 	display: none;
 } */
-.socials__list {
+.person__socials .socials__list {
 	display: none;
+}
+.socials__list {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
@@ -1291,6 +1293,12 @@ input[type='radio'].visually-hidden {
 }
 
 /* FOOTER */
+.page-footer {
+	min-height: 70px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	background-color: #192b59;
+}
 .copyright__text {
 	font-weight: normal;
 	color: #b6bae0;
