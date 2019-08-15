@@ -1192,6 +1192,7 @@ input[type='radio'].visually-hidden {
 /* CONTACT */
 .contact {
 	padding-top: 70px;
+	padding-bottom: 120px;
 	background-color: #edf6ff;
 	background-image: url('../img/contact-form/contact-form_bg.png');
 	background-repeat: no-repeat;
@@ -1200,21 +1201,35 @@ input[type='radio'].visually-hidden {
 }
 .contact__wrapper {
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 }
 .contact__image {
-	flex-basis: 45%;
+	/* flex-basis: 44%; */
+	flex-basis: 460px;
+	align-self: center;
+	margin-right: 30px;
+}
+.contact__image img {
+	margin-top: 55px;
+	margin-left: -23px;
 }
 .contact__column {
-	flex-basis: 55%;
+	/* flex-basis: 56%; */
+	flex-basis: 524px;
+	padding-left: 8px;
 }
 .contact__title {
 	margin-bottom: 48px;
 }
 .contact__item {
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
+}
+.contact__item-message {
+	min-height: 160px;
+	margin-bottom: 34px;
+}
+.contact__message {
+	min-height: inherit;
 }
 .contact__item::after {
 	display: block;
@@ -1233,6 +1248,7 @@ input[type='radio'].visually-hidden {
 	background-image: url('../img/contact-form/icon_envelope-grey.svg');
 	width: 14px;
 	height: 11px;
+	background-position: 0 1px;
 }
 .contact__item-message::after {
 	background-image: url('../img/contact-form/icon_pen-grey.svg');
@@ -1242,7 +1258,7 @@ input[type='radio'].visually-hidden {
 .contact__item input,
 .contact__item textarea {
 	width: 100%;
-	padding: 30px 65px 25px 40px;
+	padding: 26px 80px 24px 40px;
 	font-size: 14px;
 	border: 2px solid rgba(72, 72, 72, 0.1);
 	border-radius: 35px;
@@ -1253,11 +1269,23 @@ input[type='radio'].visually-hidden {
 	color: #8995b3;
 }
 .contact__button {
+	position: relative;
+	padding: 22px 52px 22px 77px;
 	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	color: #ffffff;
 	text-transform: uppercase;
+}
+.contact__button::before {
+	display: block;
+	content: '';
+	position: absolute;
+	left: 53px;
+	width: 13px;
+	height: 13px;
+	background-image: url('../img/contact-form/icon_paper-plane.svg');
+	background-repeat: no-repeat;
 }
 
 /* FOOTER */
