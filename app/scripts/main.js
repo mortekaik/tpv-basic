@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	$('.person__socials').on('click', '.socials__button--plus', function(e) {
+	$('.person__socials').on('click', '.person__socials-button--plus', function(e) {
 		
 		const socialsList = $(this).siblings('.socials__list');
 		$(this).hide();
