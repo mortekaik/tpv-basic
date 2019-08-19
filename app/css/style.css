@@ -154,7 +154,7 @@ input[type='radio'].visually-hidden {
 	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 15px;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 .h1, .h2 {
 	color: #192b59;
@@ -213,7 +213,7 @@ input[type='radio'].visually-hidden {
 	position: relative;
 	background-image: url('../img/header_bg_all.jpg');
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 	background-position: top center;
 }
 .page-header__container {
@@ -303,6 +303,12 @@ input[type='radio'].visually-hidden {
 	padding: 102px 0;
 	list-style-type: none;
 }
+.sponsors__item {
+	flex-basis: 25%;
+}
+.sponsors__image {
+	margin: 0 auto;
+}
 .sponsors__image--token {
 	width: 198px;
 	height: 58px;
@@ -354,7 +360,7 @@ input[type='radio'].visually-hidden {
 	border-radius: 10px;
 	background-color: #ffffff;
 	box-shadow: 0 8px 16px rgba(180, 181, 181, 0.2);
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 .features__item--docs {
 	grid-area: docs;
@@ -383,7 +389,7 @@ input[type='radio'].visually-hidden {
 .features__icon {
 	margin: 0 auto;
 	background: url('../img/features/features_icons.png') no-repeat;
-	outline: 1px solid #000000;
+	/* outline: 1px solid #000000; */
 }
 .features__icon--docs {
 	width: 73px;
@@ -527,15 +533,16 @@ input[type='radio'].visually-hidden {
 	border-radius: 35px;
 }
 .subscribe__button {
-	padding: 16px 44px;
+	padding: 18px 46px;
 	padding-right: 41px;
 	font-size: 14px;
 	letter-spacing: 2.7px;
-	border: 2px solid #1085e4;
+	border: none;
+	/* border: 2px solid #1085e4; */
 }
 .subscribe__button:hover {
 	background-color: #ffffff;
-	border: 2px solid transparent;
+	/* border: 2px solid transparent; */
 }
 .subscribe__picture {
 	flex-grow: 1;
@@ -1023,14 +1030,18 @@ input[type='radio'].visually-hidden {
 	color: #ffffff;
 }
 .plan-card--highlighted .plan-card__button {
+	padding: 23px 64px;
 	color: #ffffff;
 	background-color: #1085e4;
-	border: 2px solid #1085e4;
+	/* border: 2px solid #1085e4; */
+	border: none;
 }
 .plan-card--highlighted .plan-card__button:hover {
-	color: #94b4cc;
-	background-color: transparent;
-	border-color: #94b4cc;
+	/* color: #94b4cc; */
+	/* background-color: transparent; */
+	/* border-color: #94b4cc; */
+	color: #1085e4;
+	background-color: #ffffff;
 }
 
 /* TEAM */
@@ -1252,6 +1263,7 @@ input[type='radio'].visually-hidden {
 }
 .contact__message {
 	min-height: inherit;
+	resize: none;
 }
 .contact__item::after {
 	display: block;
@@ -1353,3 +1365,5 @@ input[type='radio'].visually-hidden {
 .page-footer__socials-link:hover .page-footer__socials-icon path {
 	fill: #1085e4;
 }
+
+@import 'media.css';
