@@ -1366,4 +1366,10 @@ input[type='radio'].visually-hidden {
 	fill: #1085e4;
 }
 
-@import 'media.css';
+/*--- MEDIA ---*/
+
+@media (max-width: 1050px) {
+	.sponsors__item {
+		flex-basis: 50%;
+	}
+}
