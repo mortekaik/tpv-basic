@@ -468,6 +468,7 @@ input[type='radio'].visually-hidden {
 }
 .subscribe__wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	/* justify-content: space-between; */
 	padding-top: 52px;
 	padding-bottom: 51px;
@@ -1369,7 +1370,53 @@ input[type='radio'].visually-hidden {
 /*--- MEDIA ---*/
 
 @media (max-width: 1050px) {
+	
+	/* SPONSORS */
+	.sponsors__list {
+		padding: 102px 0 51px;
+	}
 	.sponsors__item {
 		flex-basis: 50%;
+		margin-bottom: 51px;
+	}
+
+	/* FEATURES */
+	.features__grid-wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			'title title title'
+			'docs custom mobile'
+			'responsive support edit'
+			'quote quote quote';
+	}
+	.features__title {
+		text-align: center;
+	}
+
+	/* SUBSCRIBE */
+
+	.subscribe__wrapper {
+		flex-direction: column-reverse;
+	}
+	.subscribe__wrapper .column {
+		flex-basis: 100%;
+	}
+	.subscribe__form {
+		padding-top: 50px;
+		text-align: center;
+	}
+	.subscribe__desc {
+		margin: 0 auto;
+	}
+	.subscribe__input {
+		max-width: 540px;
+		margin: 0 auto;
+	}
+	.subscribe__picture {
+		margin: 0 auto;
+	}
+	.subscribe__image {
+		max-width: 50%;
+		margin: 0 auto;
 	}
 }
