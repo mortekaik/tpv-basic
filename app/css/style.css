@@ -264,6 +264,16 @@ input[type='radio'].visually-hidden {
 	background-color: #1085e4;
 	border: 2px solid #1085e4;
 }
+.main-nav__toggle {
+	display: none;
+	padding: 0;
+	background-color: transparent;
+}
+.main-nav__toggle-image {
+	width: 62px;
+	height: 62px;
+	fill: #192b59;
+}
 
 .page-header__title {
 	max-width: 540px;
@@ -1370,7 +1380,14 @@ input[type='radio'].visually-hidden {
 /*--- MEDIA ---*/
 
 @media (max-width: 1050px) {
-	
+	/* MAIN-NAV */
+	.main-nav__list {
+		display: none;
+	}
+	.main-nav__toggle {
+		display: block;
+	}
+
 	/* SPONSORS */
 	.sponsors__list {
 		padding: 102px 0 51px;
