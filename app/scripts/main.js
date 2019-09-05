@@ -9,4 +9,12 @@ $(document).ready(function () {
 
 	});
 
+	$('.main-nav').on('click', '.main-nav__toggle', function() {
+		$(this).hide();
+		$('.modal, .modal__list').show();
+	}).on('click', '.main-nav__toggle--close', function() {
+		$('.main-nav__toggle').show();
+		$('.modal, .modal__list').hide();
+	})
+
 });
