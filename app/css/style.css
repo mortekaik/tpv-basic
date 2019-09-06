@@ -371,6 +371,7 @@ input[type='radio'].visually-hidden {
 	min-height: 393px;
 	padding-right: 38px;
 	padding-left: 40px;
+	padding-bottom: 30px;
 	text-align: center;
 	border-radius: 10px;
 	background-color: #ffffff;
@@ -403,6 +404,7 @@ input[type='radio'].visually-hidden {
 }
 .features__icon {
 	margin: 0 auto;
+	margin-bottom: 37px;
 	background: url('../img/features/features_icons.png') no-repeat;
 	/* outline: 1px solid #000000; */
 }
@@ -415,31 +417,26 @@ input[type='radio'].visually-hidden {
 .features__icon--custom {
 	width: 89px;
 	height: 85px;
-	margin-bottom: 37px;
 	background-position: 0 -619px;
 }
 .features__icon--friendly {
 	width: 79px;
 	height: 82px;
-	margin-bottom: 37px;
 	background-position: 0 0;
 }
 .features__icon--responsive {
 	width: 85px;
 	height: 90px;
-	margin-bottom: 37px;
 	background-position: 0 -460px;
 }
 .features__icon--support {
 	width: 100px;
 	height: 87px;
-	margin-bottom: 37px;
 	background-position: 0 -773px;
 }
 .features__icon--edit {
 	width: 103px;
 	height: 92px;
-	margin-bottom: 6px;
 	background-position: 0 -151px;
 }
 .features__name {
@@ -579,7 +576,6 @@ input[type='radio'].visually-hidden {
 .software-features__bg {
 	position: absolute;
 	width: 48%;
-	/* height: 988px; */
 	height: 100%;
 	left: -9px;
 	bottom: -32px;
@@ -796,6 +792,7 @@ input[type='radio'].visually-hidden {
 	position: absolute;
 	top: 52px;
 	right: 227px;
+	z-index: -1;
 }
 
 /* GET-STARTED */
@@ -1389,17 +1386,18 @@ input[type='radio'].visually-hidden {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	padding-top: 48px;
 	text-align: center;
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
 }
 .main-nav__toggle--close {
 	position: absolute;
-	top: 20px;
+	top: 48px;
 	right: 20px;
 }
 .modal .main-nav__list {
-	margin: 20px 0;
+	margin-bottom: 20px;
 }
 .modal .main-nav__item {
 	padding-top: 0;
@@ -1417,14 +1415,43 @@ input[type='radio'].visually-hidden {
 @media (max-width: 1680px) {
 	
 	.software-features__bg {
-		position: absolute;
-		width: 48%;
-		left: -20px;
+		left: -30px;
 		bottom: 0;
 		background-image: url('../img/features/software-features_full-bg.png');
 		background-size: contain;
-		background-repeat: no-repeat;
 		background-position: center center;
+	}
+	.intro-app__link {
+		width: 40%;
+		top: 50%;
+		right: 100px;
+		transform: translateY(-50%);
+	}
+}
+
+@media (max-width: 1280px) {
+
+	.software-features {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+	.software-features__bg {
+		display: none;
+	}
+	.software-features__wrappper {
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.software-features__icon {
+		left: 0;
+	}
+	.software-features__list {
+		max-width: 800px;
+		margin-right: 50px;
+	}
+	.intro-app__link {
+		width: 45%;
+		right: 40px;
 	}
 }
 
@@ -1505,6 +1532,86 @@ input[type='radio'].visually-hidden {
 		max-width: 50%;
 		margin: 0 auto;
 	}
+
+	/* INTRO-APP */
+	.intro-app {
+		padding-top: 430px;
+		padding-bottom: 70px;
+	}
+	.intro-app__wrapper {
+		text-align: center;
+	}
+	.intro-app__back-title {
+		left: 0;
+		right: 0;
+	}
+	.intro-app__content {
+		width: 100%;
+	}
+	.intro-app__download-list li:last-child {
+		margin-right: 0;
+	}
+	.intro-app__link {
+		width: 360px;
+		top: 70px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		transform: none;
+	}
+}
+
+@media (max-width: 960px) {
+	/* FEATURES */
+	.features__grid-wrapper {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'title title'
+			'docs custom'
+			'mobile responsive'
+			'support edit'
+			'quote quote';
+		padding: 121px 40px 89px 40px;
+	}
+	.features__title {
+		text-align: center;
+	}
+}
+
+@media (max-width: 750px) {
+	.intro-app__back-title {
+		display: none;
+	}
+}
+
+@media (max-width: 697px) {
+	
+	/* STATS */
+	.stats {
+		padding: 70px 0;
+	}
+	.stats__list {
+		justify-content: center;
+	}
+	.stats__item {
+		flex-basis: 34%;
+		margin-bottom: 30px;
+	}
+	/* FEATURES */
+	.features__grid-wrapper {
+		display: block;
+		/* padding: 121px 40px 89px 40px; */
+	}
+	.features__item {
+		max-width: 70%;
+		margin: 0 auto 30px;
+	}
+	.features__title {
+		text-align: center;
+	}
+	.features__quote-text {
+		margin-top: 0;
+	}
 }
 
 @media (max-width: 540px) {
@@ -1530,5 +1637,18 @@ input[type='radio'].visually-hidden {
 	}
 	.page-header__links .button + .button {
 		margin-left: 0;
+	}
+	.intro-app {
+		padding-top: 385px;
+	}
+	.intro-app__link {
+		width: 300px;
+	}
+	.intro-app__title {
+		font-size: 36px;
+		line-height: inherit;
+	}
+	.intro-app__desc {
+		font-size: 14px;
 	}
 }
